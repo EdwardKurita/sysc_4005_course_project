@@ -6,7 +6,7 @@
 |     Name      |     ID    |
 | :-----------: | :-------: |
 | Teddy Kurita  | 101267498 |
-| Declan Koster | |
+| Declan Koster | 101301649 |
 ---
 
 ### Project Structure
