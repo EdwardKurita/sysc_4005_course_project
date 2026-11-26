@@ -1,3 +1,5 @@
+[![↤ Return to Readme](https://img.shields.io/badge/↤%20Return%20to%20README-8A2BE2)](../README.md)
+
 # Conceptual Model — SFMA Passenger Processing
 
 Phase I deliverable (assignment §3). Keep this in sync with the code.

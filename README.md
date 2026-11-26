@@ -8,9 +8,7 @@ This project was initialized using uv ([uv documentation](https://docs.astral.sh
 ---
 ### Documentation
 
-| **Document** | **Source** |
-| :-: | :-: |
-| Conceptual Model | [*docs/conceptual_model.md*](docs/conceptual_model.md) |
+[![Conceptual Model](https://img.shields.io/badge/Conceptual%20Model-8A2BE2)](docs/conceptual_model.md)
 
 ---
 ### Project Structure
