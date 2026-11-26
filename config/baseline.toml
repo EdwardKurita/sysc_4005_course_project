@@ -1,0 +1,57 @@
+# Baseline configuration: the system exactly as described in the assignment.
+#
+# Every experiment is a config file. To make an alternative or a sensitivity level, copy this file
+# and change only the values under study. Seeds live separately in seeds/ and are shared by all
+# configs, so experiments are compared under the same random numbers.
+#
+# Units: time in minutes, money in dollars.
+
+[simulation]
+horizon_min = 10080                # 7 days
+replications = 10                  # pilot study; keep equal across compared configs
+
+[commuter]
+arrival_rate_per_hour = 40.0       # Poisson process
+first_departure_min = 30           # every hour on the half hour
+departure_interval_min = 60
+seats = 40
+ticket_price = 200
+flight_operating_cost = 1500
+
+[provincial]
+first_departure_min = 360          # 06:00 Day 1; the 00:00 Day 1 flight is skipped (conceptual model)
+departure_interval_min = 360       # every 6 hours
+business_seats = 40
+coach_seats = 140
+business_occupancy = 0.75          # P(business seat occupied)
+coach_occupancy = 0.85             # P(coach seat occupied)
+business_ticket_price = 1000
+coach_ticket_price = 500
+flight_operating_cost = 12000
+refund_min_lead_min = 90           # refund if arrived >= 90 min before departure and missed
+
+[provincial.lead_time]             # minutes before departure, truncated normal
+mean = 75.0                        # untruncated mean
+variance = 50.0                    # untruncated variance
+# Truncation limits: to be added with the 2.2 arrival code.
+
+[bags]                             # P(B = 0), P(B = 1), P(B = 2)
+commuter = [0.70, 0.25, 0.05]
+provincial = [0.30, 0.50, 0.20]
+
+[checkin]
+business_counters = 1
+coach_counters = 3
+max_counters = 6
+boarding_pass_mean_min = 2.0       # exponential
+per_bag_mean_min = 1.0             # exponential, per checked bag
+other_delay_mean_min = 3.0         # exponential, every passenger
+agent_wage_per_hour = 35
+
+[security]
+business_screens = 1
+coach_screens = 2
+screening_mean_min = 3.0           # exponential
+
+[finance]
+staffing_cap_fraction = 0.05       # staffing cost <= 5% of (revenue - refunds)
