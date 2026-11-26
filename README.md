@@ -1,14 +1,18 @@
 ### SYSC 4005 COURSE PROJECT
 #### **Regional Airport Passenger: Processing Simulation Study**
----
 
-### Authors
-|     Name      |     ID    |
-| :-----------: | :-------: |
-| Teddy Kurita  | 101267498 |
-| Declan Koster | 101301649 |
 ---
+### Setup
+This project was initialized using uv ([uv documentation](https://docs.astral.sh/uv/)) and will be used for package and project management.
 
+---
+### Documentation
+
+| **Document** | **Source** |
+| :-: | :-: |
+| Conceptual Model | [*docs/conceptual_model.md*](docs/conceptual_model.md) |
+
+---
 ### Project Structure
 ```
 sysc_4005_course_project/
@@ -42,5 +46,10 @@ sysc_4005_course_project/
 ├── README.md
 └── final_report.pdf
 ```
-### Setup
-This project was initialized using uv ([documentation](https://docs.astral.sh/uv/)) and will be used for package and project management.
+
+---
+### Authors
+|     Name      |     ID    |
+| :-----------: | :-------: |
+| Teddy Kurita  | 101267498 |
+| Declan Koster | 101301649 |
