@@ -1,4 +1,4 @@
-[![↤ Return to Readme](https://img.shields.io/badge/↤%20Return%20to%20README-8A2BE2)](../README.md)
+[![↤ Return to Readme](https://img.shields.io/badge/↤%20Return%20to%20README-8A2BE2)](https://github.com/EdwardKurita/sysc_4005_course_project)
 
 # Conceptual Model — SFMA Passenger Processing
 
